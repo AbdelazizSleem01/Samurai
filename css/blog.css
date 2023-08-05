@@ -1,0 +1,100 @@
+.btn-read{
+    background-color: #740000;
+    color: #ffffff;
+    font-size: 17px;
+    border:2px solid #740000;
+    font-weight: bolder;
+    margin-bottom: -20px;
+}
+.btn-read:hover{
+    border:2px solid #740000;
+    color: #000000;
+    font-weight: bold;
+}
+/* filter-search */
+.searchbar {
+    position: relative;
+    left: 3vw;
+    height: 50px;
+    background-color: #780000;
+    border-radius: 30px;
+    padding: 5px;
+}
+.search_input {
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 220px;
+    caret-color: rgb(0, 0, 0);
+    transition: width 0.4s linear;
+    background: rgba(157, 157, 157, 0.445);
+    border-radius: 30px;
+}
+.searchbar:hover > .search_icon {
+    background: #fff;
+    color: #780000;
+}
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+.font strong{
+    color: #9b2e00;
+    text-shadow: black 1px 1px 1px ;
+    font-size:2em ;
+}
+.icons-card p{
+    color: #000000;
+}
+.icons-card p:hover{
+    color: #9b2e00;
+}
+.card-title:hover{
+    color: rgb(202, 167, 91);
+    cursor: pointer;
+}
+.blog{
+    border-bottom:3px solid #840200;
+}

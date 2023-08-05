@@ -1,0 +1,179 @@
+    body{
+        background: #00000010;
+        
+    }
+    .card-stepper {
+    z-index: 0
+    }
+    
+    #progressbar-2 {
+    color: #455A64;
+    }
+    .page{
+        border-bottom:3px solid #840200;
+    }
+    .bg{
+        border-radius: 10px;
+    }
+    /* filter-search */
+.searchbar {
+    position: relative;
+    left: 3vw;
+    height: 50px;
+    background-color: #780000;
+    border-radius: 30px;
+    padding: 5px;
+}
+.search_input {
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 220px;
+    caret-color: rgb(0, 0, 0);
+    transition: width 0.4s linear;
+    background: rgba(157, 157, 157, 0.445);
+    border-radius: 30px;
+}
+.searchbar:hover > .search_icon {
+    background: #fff;
+    color: #780000;
+}
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+    #progressbar-2 li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    }
+    
+    #progressbar-2 #step1:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    margin-left: 0px;
+    padding-left: 0px;
+    }
+    
+    #progressbar-2 #step2:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    }
+    
+    #progressbar-2 #step3:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    margin-right: 0;
+    text-align: center;
+    }
+    
+    #progressbar-2 #step4:before {
+    content: '\f111';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    background: #740000a5;
+    width: 37px;
+    margin-right: 0;
+    text-align: center;
+    }
+    
+    #progressbar-2 li:before {
+    line-height: 37px;
+    display: block;
+    font-size: 12px;
+    background: #740000a5;
+    border-radius: 50%;
+    }
+    
+    #progressbar-2 li:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #740000;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15px;
+    z-index: -1;
+    }
+    
+    #progressbar-2 li:nth-child(1):after {
+    left: 1%;
+    width: 100%
+    }
+    
+    #progressbar-2 li:nth-child(2):after {
+    left: 1%;
+    width: 100%;
+    }
+    
+    #progressbar-2 li:nth-child(3):after {
+    left: .5%;
+    width: 100%;
+    background: #740000a1 !important;
+    }
+    
+    #progressbar-2 li:nth-child(4) {
+    left: 0;
+    width: 37px;
+    }
+    
+    #progressbar-2 li:nth-child(4):after {
+    left: 0;
+    width: 0;
+    }
+    
+    #progressbar-2 li.active:before,
+    #progressbar-2 li.active:after {
+    background: #740000;
+    }

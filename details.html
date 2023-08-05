@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/letter-s (1).png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- animated css -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- bootstrab-css -->
+    <link rel="stylesheet" href="node_modules/mdb-ui-kit/css/mdb.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/datails.css">
+    <title>Product Details</title>
+</head>
+<body>
+    
+  <!-- nav-bar -->
+
+	<nav class="navbar navbar-expand-lg ">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<a class="navbar-brand mt-2 mt-lg-0" href="#">
+					<h2 class="text-uppercase  d-flex font mx-5">
+						<img class="" src="imgs/letter-s (1).png" height="35"/>amurai
+					</h2>
+				</a>
+				<!-- Left links -->
+				<ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+					<li class="nav-item px-1 cool-link">
+						<a class="nav-link text-uppercase mx-1" href="index.html">home</a>
+					</li>
+					<div class="dropdown px-3 cool-link">
+						<a class="dropdown-toggle hidden-arrow nav-link text-uppercase" href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+							shop
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item text-capitalize" href="category.html">shop category</a></li>
+							<li><a class="dropdown-item text-capitalize" href="details.html">product details</a></li>
+							<li><a class="dropdown-item text-capitalize" href="check.html">product checkout</a></li>
+							<li><a class="dropdown-item text-capitalize" href="shopping cart.html">shopping cart</a></li>
+						</ul>
+					</div>
+					<div class="dropdown px-3 cool-link">
+						<a class="dropdown-toggle hidden-arrow nav-link text-uppercase" href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+							pages	
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item text-capitalize" href="Traching.html">Traching</a></li>
+						</ul>
+					</div>
+					<div class="dropdown px-3 cool-link">
+						<a class="dropdown-toggle hidden-arrow nav-link text-uppercase" href="#" role="button" id="dropdownMenuLink" data-mdb-toggle="dropdown" aria-expanded="false">
+							blog	
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<li><a class="dropdown-item text-capitalize" href="blog.html">blog</a></li>
+							<li><a class="dropdown-item text-capitalize" href="blog details.html">blog details</a></li>
+						</ul>
+					</div>
+					<li class="nav-item cool-link">
+						<a class="nav-link text-uppercase mx-2 " href="contact.html">contact</a>
+					</li>
+          <div class="">
+						<form autocomplete="off" action="/action_page.php">
+							<div class="container h-100">
+								<div class="d-flex justify-content-center h-100 autocomplete">
+									<div class="searchbar">
+										<input class="search_input" id="keyword" type="text" name="" placeholder="Search...">
+										<a href="#" id="search-button" class="search_icon"><i class="fas fa-search"></i></a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</ul>
+				</div>
+			<div class="d-flex align-items-center">
+				<!-- Search form -->
+				<a class="text-reset me-3" href="#">
+					<i class="fas fa-shopping-cart nav-icon"></i>
+				</a>
+				<a class="text-reset me-3" href="#">
+					<i class="fa-regular fa-heart nav-icon"></i>
+				</a>
+				<div class="dropdown">
+					<a
+					class="text-reset me-3 dropdown-toggle hidden-arrow"
+					href="#"
+					id="navbarDropdownMenuLink"
+					role="button"
+					data-mdb-toggle="dropdown"
+					aria-expanded="false">
+					<i class="fa-solid fa-user nav-icon"></i>
+					</a>
+					<ul
+						class="dropdown-menu dropdown-menu-end"
+						aria-labelledby="navbarDropdownMenuLink">
+						<li>
+							<a class="dropdown-item fw-bold font hover-shadow-soft " href="LOGIN.html">LOGIN</a>
+						</li>
+						<li>
+							<a class= "dropdown-item fw-bold font" href="SIGNUP.html">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+  <!-- header of cat -->
+  <header>
+    <div class="header mb-4 my-auto">
+        <div class="container py-4">
+            <h3 class=" mt-2 font">Product Details</h3>
+            <nav class="d-flex mb-2">
+                <h6 class="mb-0">
+                    <a href="" class="text-black">Home</a>
+                    <span class="text-black mx-2"> > </span>
+                    <a href="" class="text-black">Shop</a>
+                    <span class=" mx-2"> > </span>
+                    <a href="" class="text-black-50"><u>Product Details</u></a>
+                </h6>
+            </nav>
+        </div>
+    </div>
+  </header>
+  <!-- content -->
+
+  <section class="py-5">
+        <div class="container">
+          <div class="row gx-5">
+            <aside class="col-lg-6">
+              <div class="border rounded-4 mb-3 d-flex justify-content-center">
+                <a data-fslightbox="mygalley" class="rounded-4" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp">
+                  <img style="max-width: 100%; max-height: 100vh; margin: auto;" class="rounded-4 fit" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp" />
+                </a>
+              </div>
+              <div class="d-flex justify-content-center mb-3">
+                <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big1.webp" class="item-thumb">
+                  <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big1.webp" />
+                </a>
+                <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big2.webp" class="item-thumb">
+                  <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big2.webp" />
+                </a>
+                <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big3.webp" class="item-thumb">
+                  <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big3.webp" />
+                </a>
+                <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big4.webp" class="item-thumb">
+                  <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big4.webp" />
+                </a>
+                <a data-fslightbox="mygalley" class="border mx-1 rounded-2" target="_blank" data-type="image" href="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp" class="item-thumb">
+                  <img width="60" height="60" class="rounded-2" src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/detail1/big.webp" />
+                </a>
+              </div>
+              <!-- thumbs-wrap.// -->
+              <!-- gallery-wrap .end// -->
+            </aside>
+            <main class="col-lg-6">
+              <div class="ps-lg-3">
+                <h4 class="title text-dark">
+                  Quality Men's Hoodie for Winter, Men's Fashion <br />
+                  Casual Hoodie
+                </h4>
+                <div class="d-flex flex-row my-3">
+                  <div class="text-warning mb-1 me-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="ms-1">
+                      4.5
+                    </span>
+                  </div>
+                  <span class="text-muted"><i class="fas fa-shopping-basket fa-sm mx-1"></i>154 orders</span>
+                  <span class="text-success ms-2">In stock</span>
+                </div>
+      
+                <div class="mb-3">
+                  <span class="h5">$75.00</span>
+                  <span class="text-muted">/per box</span>
+                </div>
+      
+                <p>
+                  Modern look and quality demo item is a streetwear-inspired collection that continues to break away from the conventions of mainstream fashion. Made in Italy, these black and brown clothing low-top shirts for
+                  men.
+                </p>
+      
+                <div class="row">
+                  <dt class="col-3">Type:</dt>
+                  <dd class="col-9">Men's Hoodie</dd>
+      
+                  <dt class="col-3">Color</dt>
+                  <dd class="col-9">Pale Blue</dd>
+      
+                  <dt class="col-3">Material</dt>
+                  <dd class="col-9">Cotton, Jeans</dd>
+      
+                  <dt class="col-3">Brand</dt>
+                  <dd class="col-9">Nike</dd>
+                </div>
+      
+                <hr />
+      
+                <div class="row mb-4">
+                  <div class="col-md-4 col-6">
+                    <label class="mb-2">Size</label>
+                    <select class="form-select border border-secondary" style="height: 35px;">
+                      <option>Small</option>
+                      <option>Medium</option>
+                      <option>Large</option>
+                    </select>
+                  </div>
+                  <!-- col.// -->
+                  <div class="col-md-4 col-6 mb-3">
+                    <label class="mb-2 d-block">Quantity</label>
+                    <div class="input-group d-flex mb-3" style="width: 170px;">
+                      <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon1" data-mdb-ripple-color="dark">
+                        <i class="fas fa-minus"></i>
+                      </button>
+                      <input type="text" class="form-control text-center border border-secondary" placeholder="14" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                      <button class="btn btn-white border border-secondary px-3" type="button" id="button-addon2" data-mdb-ripple-color="dark">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-buy shadow-0"> Buy now </a>
+                <a href="#" class="btn btn-add shadow-0"> <i class="me-1 fa fa-shopping-basket"></i> Add to cart </a>
+                <a href="#" class="btn btn-save py-2 px-3 mt-2"> <i class="me-1 fa fa-heart fa-lg"></i> Save </a>
+              </div>
+            </main>
+          </div>
+        </div>
+  </section>
+
+  <!-- content -->
+
+  <section class="bg-light border-top py-4">
+        <div class="container">
+          <div class="row gx-4">
+            <div class="col-lg-8 mb-4">
+              <div class="border rounded-2 px-3 py-2 bg-white">
+                <!-- Pills navs -->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                  <li class="nav-item d-flex" role="presentation">
+                    <a class="nav-link d-flex align-items-center justify-content-center w-100 active" id="ex1-tab-1" data-mdb-toggle="pill" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">Specification</a>
+                  </li>
+                  <li class="nav-item d-flex" role="presentation">
+                    <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-2" data-mdb-toggle="pill" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">Description</a>
+                  </li>
+                  <li class="nav-item d-flex" role="presentation">
+                    <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-3" data-mdb-toggle="pill" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-3" aria-selected="false">Comments</a>
+                  </li>
+                  <li class="nav-item d-flex" role="presentation">
+                    <a class="nav-link d-flex align-items-center justify-content-center w-100" id="ex1-tab-4" data-mdb-toggle="pill" href="#ex1-pills-4" role="tab" aria-controls="ex1-pills-4" aria-selected="false">Review</a>
+                  </li>
+                </ul>
+                <!-- Pills navs -->
+      
+                <!-- Pills content -->
+                <div class="tab-content" id="ex1-content">
+                  <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                    <div class="row mb-2">
+                      <div class="col-12 col-md-6">
+                        <ul class="list-unstyled mb-0">
+                          <li><i class="fas fa-check text-success me-2"></i>Some great feature name here</li>
+                          <li><i class="fas fa-check text-success me-2"></i>Lorem ipsum dolor sit amet, consectetur</li>
+                          <li><i class="fas fa-check text-success me-2"></i>Duis aute irure dolor in reprehenderit</li>
+                          <li><i class="fas fa-check text-success me-2"></i>Optical heart sensor</li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-md-6 mb-0">
+                        <ul class="list-unstyled">
+                          <li><i class="fas fa-check text-success me-2"></i>Easy fast and ver good</li>
+                          <li><i class="fas fa-check text-success me-2"></i>Some great feature name here</li>
+                          <li><i class="fas fa-check text-success me-2"></i>Modern style and design</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <table class="table border mt-3 mb-2">
+                      <tr>
+                        <th class="py-2">Width</th>
+                        <td class="py-2">128mm</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Height</th>
+                        <td class="py-2">508mm</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Depth</th>
+                        <td class="py-2">85mm</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Weight</th>
+                        <td class="py-2">52gm</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Quality checking</th>
+                        <td class="py-2">yes</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Freshness Duration</th>
+                        <td class="py-2">03days</td>
+                      </tr>
+                      <tr>
+                        <th class="py-2">Each Box contains</th>
+                        <td class="py-2">60pc</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!-- DESCRIPTION -->
+                  <div class="tab-pane fade mt-2 mb-2" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    <h1 class="font text-center des-title mb-4 mt-5">DESCRIPTION</h1>
+                    If you are looking for stylish, comfortable and affordable clothing, <br> look no further than Mintajat. Mintajat is a online store that offers  a wide range of products for men, <br> women and children.  Whether you need casual wear,  formal wear, sportswear or accessories, Mintajat has something for everyone. You can browse through our collections, read customer reviews and order online with ease. Mintajat delivers quality clothing at your doorstep in no time. Visit Mintajat today and discover the best deals on fashion
+                  </div>
+                  <!-- comment -->
+                  <div class="tab-pane fade mb-2" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                    <section>
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-sm-12 col-md-6 col-lg-12 pb-4">
+                                  <h1 class="comment-title font">Comments</h1>
+                                  <div class="comment mt-4 text-justify float-left">
+                                      <img src="imgs/Men-Face1.jpg" alt="" class="rounded-circle" width="40" height="40">
+                                      <h4>Mohamed Ahmed</h4>
+                                      <span>- 20 October, 2018</span>
+                                      <br>
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                  </div>
+                                  <div class="text-justify darker mt-4 float-right">
+                                      <img src="imgs/Men-Face2.jpg" alt="" class="rounded-circle" width="40" height="40">
+                                      <h4>Khaled Mohamdy</h4>
+                                      <span>- 20 October, 2018</span>
+                                      <br>
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                  </div>
+                                  <div class="comment mt-4 text-justify">
+                                      <img src="imgs/Men-Face3.jpg" alt="" class="rounded-circle" width="40" height="40">
+                                      <h4>Omar Salah</h4>
+                                      <span>- 20 October, 2018</span>
+                                      <br>
+                                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                  </div>
+                                  <div class="darker mt-4 text-justify">
+                                      <img src="imgs/Men-Face4.jpg" alt="" class="rounded-circle" width="40" height="40">
+                                      <h4>Amr Ahmed</h4>
+                                      <span>- 20 October, 2018</span>
+                                      <br>
+                                      <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 col-sm-12 col-lg-12 mt-4">
+                                  <form id="algin-form from1">
+                                      <div class="form-group">
+                                          <h4 class="font fw-bold">Leave a comment</h4>
+                                          <label for="message" class="fw-semibold">Message :</label>
+                                          <textarea name="msg" id=""msg cols="30" rows="5" class="form-control"></textarea>
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="name" class="fw-semibold">Name :</label>
+                                          <input type="text" name="name" id="fullname" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="email" class="fw-semibold">Email :</label>
+                                          <input type="text" name="email" id="email" class="form-control">
+                                      </div>
+                                      <div class="form-group" class="fw-semibold">
+                                          <p>If you have a <a href="#" class="alert-link">gravatar account</a> your address will be used to display your profile picture.</p>
+                                      </div>
+                                      <div class="form-inline">
+                                          <input type="checkbox" name="check" id="checkbx" class="mr-1">
+                                          <label for="subscribe">Subscribe me to the newlettter</label>
+                                      </div>
+                                      <div class="form-group mx-auto">
+                                          <button type="button" class="btn btn-post text-center">Post Comment</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+                  </div>
+                  <!-- review -->
+                  <div class="tab-pane fade mb-2" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+                    <section class="review">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-md-10 col-xl-8 text-center">
+                          <h3 class="mb-4 font">ٍSome Review</h3>
+                          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                            Some of our customers' opinions in products 
+                          </p>
+                        </div>
+                      </div>
+                    
+                      <div class="row text-center">
+                        <div class="col-md-4 mb-5 mb-md-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="imgs/review-1.png"
+                              class="rounded-circle shadow-1-strong" width="150" height="150" />
+                          </div>
+                          <h5 class="mb-3 font">Blake Ruiz</h5>
+                          <h6 class="text-primary mb-3">Model</h6>
+                          <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>
+                            "The products are of high quality, the prices are reasonable, and the delivery is fast and respectful"</p>
+                          <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 mb-5 mb-md-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                              class="rounded-circle shadow-1-strong" width="150" height="150" />
+                          </div>
+                          <h5 class="mb-3 font">Lisa Cudrow</h5>
+                          <h6 class="text-primary mb-3">Graphic Designer</h6>
+                          <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>"The service is great, the products suit my needs and taste, the site is easy to use and payment is safe" </p>
+                          <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 mb-0">
+                          <div class="d-flex justify-content-center mb-4">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                              class="rounded-circle shadow-1-strong" width="150" height="150" />
+                          </div>
+                          <h5 class="mb-3 font">John Smith</h5>
+                          <h6 class="text-primary mb-3">Marketing Specialist</h6>
+                          <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>"The clothes are beautiful, fashionable and comfortable, the colors are varied and consistent, and the measurements are accurate and appropriate"</p>
+                          <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="far fa-star fa-sm text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <!-- Pills content -->
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="px-0 border rounded-2 shadow-0">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Similar items</h5>
+                    <div class="d-flex mb-3">
+                      <a href="#" class="me-3">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/8.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                      </a>
+                      <div class="info">
+                        <a href="#" class="nav-link mb-1">
+                          Rucksack Backpack Large <br />
+                        </a>
+                        <strong class="text-danger"> $38.90</strong>
+                      </div>
+                    </div>
+      
+                    <div class="d-flex mb-3">
+                      <a href="#" class="me-3">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/9.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                      </a>
+                      <div class="info">
+                        <a href="#" class="nav-link mb-1">
+                          Summer New Men's Denim <br />
+                          Jeans Shorts
+                        </a>
+                        <strong class="text-danger"> $29.50</strong>
+                      </div>
+                    </div>
+      
+                    <div class="d-flex mb-3">
+                      <a href="#" class="me-3">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/10.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                      </a>
+                      <div class="info">
+                        <a href="#" class="nav-link mb-1"> T-shirts with multiple colors, for men and lady </a>
+                        <strong class="text-danger"> $120.00</strong>
+                      </div>
+                    </div>
+      
+                    <div class="d-flex">
+                      <a href="#" class="me-3">
+                        <img src="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/11.webp" style="min-width: 96px; height: 96px;" class="img-md img-thumbnail" />
+                      </a>
+                      <div class="info">
+                        <a href="#" class="nav-link mb-1"> Blazer Suit Dress Jacket for Men, Blue color </a>
+                        <strong class="text-danger"> $339.90</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- footer-sec -->
+
+	<section class="container-fluid  footer-sec">
+		<footer class="text-center text-lg-start text-white">
+			<section class="d-flex justify-content-between p-4 head-sec">
+				<div class="me-5">
+					<span>Get connected with us on social networks:</span>
+				</div>
+				<div class="contact-icon">
+					<a href="" class="text-white me-4">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="" class="text-white me-4">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="" class="text-white me-4">
+						<i class="fab fa-google"></i>
+					</a>
+					<a href="" class="text-white me-4">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="" class="text-white me-4">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="" class="text-white me-4">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+			</section>
+
+			<section class="com-name">
+				<div class="container text-center text-md-start mt-5">
+					<div class="row mt-3">
+						<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+							<h2 class="text-uppercase font ">
+								<img class="px-lg-2" src="imgs/letter-s (1).png" height="35"/>amurai
+							</h2>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 160px; background-color: #000000; height: 2px"/>
+							<p class="text-black-50 fw-bolder">
+								Here on our site, you can buy any product of clothing, whether men, women or children of all sizes, colors and shapes, and there are discounts periodically and order the product anywhere you want and as soon as possible 
+							</p>
+						</div>
+						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 title">
+							<h6 class="text-uppercase fw-bold font">Products</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #000000; height: 2px"/>
+							<p>
+								<a href="#!" class="links">Men Collection</a>
+							</p>
+							<p>
+								<a href="#!" class="links">Women Collection</a>
+							</p>
+							<p>
+								<a href="#!" class="links">Child Collection</a>
+							</p>
+							<p>
+								<a href="#!" class="links">Accessories</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 title">
+							<h6 class="text-uppercase fw-bold font">Useful links</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #000000; height: 2px"/>
+							<p>
+                <a href="index.html" class="links">Home</a>
+							</p>
+							<p>
+                <a href="contact.html" class="links">Contact</a>
+              </p>
+              <p>
+                <a href="LOGIN.html" class="links">Login</a>
+              </p>
+              <p>
+                <a href="SIGNUP.html" class="links">Sidn UP</a>
+              </p>
+						</div>	
+						<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 contact title">
+							<h6 class="text-uppercase fw-bold font">Contact</h6>
+							<hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #000000; height: 2px"/>
+							<p><i class="fas fa-home mr-3"></i> Benha, Qalubia 10012, EGP</p>
+							<p><i class="fas fa-envelope mr-3"></i> zezofalcon@gmail.com</p>
+							<p><i class="fas fa-phone mr-3"></i> + 010 0748 8071</p>
+							<p><i class="fas fa-print mr-3"></i> + 011 1926 8163</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="text-center copy-div p-3">
+				© 2023 Copyright:
+				<a class="" href="index.html">Samurai.com</a>
+			</div>
+        </footer>
+	</section>
+
+
+
+
+    <!-- boot.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="node_modules/mdb-ui-kit/js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>

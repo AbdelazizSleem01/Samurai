@@ -1,0 +1,218 @@
+.icon-hover-primary:hover {
+	border-color: #3b71ca !important;
+	background-color: white !important;
+}
+.icon-hover-primary:hover i {
+	color: #3b71ca !important;
+}
+.icon-hover-danger:hover {
+	border-color: #dc4c64 !important;
+	background-color: white !important;
+}
+.icon-hover-danger:hover i {
+	color: #dc4c64 !important;
+}
+/* filter-search */
+.searchbar {
+    position: relative;
+    left: 3vw;
+    height: 50px;
+    background-color: #780000;
+    border-radius: 30px;
+    padding: 5px;
+}
+.search_input {
+    color: rgb(0, 0, 0);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 220px;
+    caret-color: rgb(0, 0, 0);
+    transition: width 0.4s linear;
+    background: rgba(157, 157, 157, 0.445);
+    border-radius: 30px;
+}
+.searchbar:hover > .search_icon {
+    background: #fff;
+    color: #780000;
+}
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+}
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+
+.card .font{
+	color: #9b2e00;
+    text-shadow: black 1px 1px 1px ;
+}
+.recommend .font{
+	color: #9b2e00;
+    text-shadow: black 1px 1px 1px ;
+}
+.card .btn-heart{
+	background-color: #870000;
+	color: #fff;
+}
+.card .btn-heart:hover{
+	background-color: #ebebeb;
+	color: #870000;
+}
+.recommend .fa-heart{
+	color: #606060;
+}
+.recommend .fa-heart:active{
+	color: #d70000;
+}
+.btn-apply{
+    background-color: #d39442;
+    color: #ffffff;
+    font-weight: bolder;
+    border:2px solid #d39442;
+}
+.btn-apply:hover{
+    border:2px solid #740000;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+@-webkit-keyframes example {
+	from {top:-100px;opacity: 0;}
+	to {top:0px;opacity:1;}
+}
+
+@keyframes example {
+	from {top:-100px;opacity: 0;}
+	to {top:0px;opacity:1;}
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	left:17%;
+	top: 100%;
+	width: 70%;
+	height: 60%;
+	border-radius: 20px;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width:576px){
+	.modal{
+		width: 90%;
+		position: fixed;
+		left:8%;
+		top: 100%
+	}
+	.modal-check .btn{
+		margin-top: 20px;
+	}
+	.modal-dialog .modal-content  {
+		width: 500px;
+	}
+}
+.modal:target {
+	display: table;
+	position: absolute;
+}
+.modal-dialog {
+	display: table-cell;
+	vertical-align: middle;
+}
+.modal-dialog .modal-content {
+	margin: auto;
+	background-color: #f3f3f3;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	border: 1px #777 solid;
+	text-align: justify;
+	width: 80%;
+	height: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	-webkit-animation-name: example; 
+	-webkit-animation-duration: 0.5s;
+	animation-name: example;
+	animation-duration: 0.5s;
+}
+.closebtn {
+	text-decoration: none;
+	float: right;
+	font-size: 35px;
+	font-weight: bold;
+	color: #fff;
+}
+.closebtn:hover,
+.closebtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	background-color: #d39442;
+	font-size: 20px;
+	color: white;
+}
+.modal-footer {
+	background-color: #d39442;
+	font-size: 20px;
+	color: white;
+	margin-top: 70px;
+	display: flex;
+	justify-content: center;
+}
+.modal-check{
+	padding: 2px 16px;
+
+}
+.modal-check .btn{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}

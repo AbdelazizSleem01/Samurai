@@ -1,0 +1,18 @@
+.details div {
+    max-width: 1200px;
+    overflow: hidden;
+}
+.details div h3 {
+    color: brown;
+}
+.rep-head{
+    color: #9b2e00;
+    text-shadow: black 1px 1px 1px ;
+    font-size: 4em;
+    border-bottom:2px solid #000000;
+    width: 250px; 
+    margin: auto;
+}
+.blog{
+    border-bottom:3px solid #840200;
+}
