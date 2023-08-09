@@ -1,21 +1,20 @@
-    body{
-        background: #00000010;
-        
-    }
-    .card-stepper {
+body{
+    background: #00000010;
+}
+.card-stepper {
     z-index: 0
-    }
+}
     
-    #progressbar-2 {
+#progressbar-2 {
     color: #455A64;
-    }
-    .page{
-        border-bottom:3px solid #840200;
-    }
-    .bg{
-        border-radius: 10px;
-    }
-    /* filter-search */
+}
+.page{
+    border-bottom:3px solid #840200;
+}
+.bg{
+    border-radius: 10px;
+}
+/* filter-search */
 .searchbar {
     position: relative;
     left: 3vw;

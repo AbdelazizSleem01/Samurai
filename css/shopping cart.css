@@ -130,27 +130,45 @@
 .modal {
 	display: none;
 	position: fixed;
-	left:17%;
-	top: 100%;
-	width: 70%;
-	height: 60%;
+	left:-33pc;
+	top: -100%;
+	width: 500px;
+	height: 100%;
 	border-radius: 20px;
 	overflow: auto;
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
 }
-@media (max-width:576px){
+@media (max-width:987px) {
 	.modal{
-		width: 90%;
-		position: fixed;
-		left:8%;
-		top: 100%
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		transform: translate(-50%, -50%);
 	}
-	.modal-check .btn{
+}
+@media (max-width:768) {
+	.modal{
+		position: absolute;
+		left: 0%;
+		top: 0%;
+		transform: translate(-50%, -50%);
+	}
+	.btn-apply{
 		margin-top: 20px;
 	}
-	.modal-dialog .modal-content  {
-		width: 500px;
+}
+@media (max-width:576px) {
+	.modal{
+		height: 350px;
+		width: 350px;
+		position: absolute;
+		left: 51%;
+		top: -50%;
+		transform: translate(-50%, -50%);
+	}
+	.btn-apply{
+		margin-top: 20px;
 	}
 }
 .modal:target {
@@ -172,7 +190,6 @@
 	width: 80%;
 	height: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 	-webkit-animation-name: example; 
 	-webkit-animation-duration: 0.5s;
 	animation-name: example;
@@ -185,6 +202,7 @@
 	font-weight: bold;
 	color: #fff;
 }
+
 .closebtn:hover,
 .closebtn:focus {
 	color: #000;
