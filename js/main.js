@@ -111,7 +111,7 @@ function off11() {
 
 $(function () {
     var words = [
-        {label: "Shop",url: "http://127.0.0.1:5500/category.html"},
+        {label: "Shop",url: "http://127.0.0.1:5500/category.html" ,src : "imgs\back-bag-black.jpeg"},
         {label: "Category wear",url: "http://127.0.0.1:5500/category.html"},
         {label: "Shop Category",url: "http://127.0.0.1:5500/category.html"},
         {label: "Rucksack ",url: "http://127.0.0.1:5500/category.html"},
