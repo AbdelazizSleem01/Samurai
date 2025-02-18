@@ -111,23 +111,23 @@ function off11() {
 
 $(function () {
     var words = [
-        {label: "Shop",url: "http://127.0.0.1:5500/category.html" ,src : "imgs\back-bag-black.jpeg"},
-        {label: "Category wear",url: "http://127.0.0.1:5500/category.html"},
-        {label: "Shop Category",url: "http://127.0.0.1:5500/category.html"},
-        {label: "Rucksack ",url: "http://127.0.0.1:5500/category.html"},
-        {label: "Men's Denim Jeans Shorts",url: "http://127.0.0.1:5500/category.html"},
-        {label: "T-shirt for Men Pale Blue",url: "http://127.0.0.1:5500/category.html"},
-        { label: "Product Details", url: "http://127.0.0.1:5500/details.html" },
-        { label: "Product Checkout", url: "http://127.0.0.1:5500/check.html" },
-        { label: "Shopping Cart", url: "http://127.0.0.1:5500/shopping%20cart.html" },
-        { label: "pages", url: "http://127.0.0.1:5500/Traching.html" },
-        { label: "Traching", url: "http://127.0.0.1:5500/Traching.html" },
-        { label: "Contact", url: "http://127.0.0.1:5500/contact.html" },
-        { label: "login", url: "http://127.0.0.1:5500/LOGIN.html" },
-        { label: "Signup", url: "http://127.0.0.1:5500/SIGNUP.html" },
-        { label: "Blog", url: "http://127.0.0.1:5500/blog.html" },
-        { label: "Blog Details", url: "http://127.0.0.1:5500/blog%20details.html" },
-        { label: "Feature Product",  url: "http://127.0.0.1:5500/index.html"}
+        {label: "Shop",url: "https://samurai-mu.vercel.app/category.html" ,src : "imgs\back-bag-black.jpeg"},
+        {label: "Category wear",url: "https://samurai-mu.vercel.app/category.html"},
+        {label: "Shop Category",url: "https://samurai-mu.vercel.app/category.html"},
+        {label: "Rucksack ",url: "https://samurai-mu.vercel.app/category.html"},
+        {label: "Men's Denim Jeans Shorts",url: "https://samurai-mu.vercel.app/category.html"},
+        {label: "T-shirt for Men Pale Blue",url: "https://samurai-mu.vercel.app/category.html"},
+        { label: "Product Details", url: "https://samurai-mu.vercel.app/details.html" },
+        { label: "Product Checkout", url: "https://samurai-mu.vercel.app/check.html" },
+        { label: "Shopping Cart", url: "https://samurai-mu.vercel.app/shopping%20cart.html" },
+        { label: "pages", url: "https://samurai-mu.vercel.app/Traching.html" },
+        { label: "Traching", url: "https://samurai-mu.vercel.app/Traching.html" },
+        { label: "Contact", url: "https://samurai-mu.vercel.app/contact.html" },
+        { label: "login", url: "https://samurai-mu.vercel.app/LOGIN.html" },
+        { label: "Signup", url: "https://samurai-mu.vercel.app/SIGNUP.html" },
+        { label: "Blog", url: "https://samurai-mu.vercel.app/blog.html" },
+        { label: "Blog Details", url: "https://samurai-mu.vercel.app/blog%20details.html" },
+        { label: "Feature Product",  url: "https://samurai-mu.vercel.app/index.html"}
 
     ];
     $("#keyword").autocomplete({
